@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEllo</h1>
+    <p>this is para</p>
+        <ul>
+            <li>Apple</li>
+            <li>ads</li>
+            <li>Orange</li>
+        </ul>
+    
+
+
+        <!-- <p>Hello</p> -->
+
+        <script>
+            let fse = document.createElement("fse");
+            let greeting = document.createTextNode("Hello world")
+            
+            fse.setAttribute('fairway', 'tech');
+            fse.setAttribute('class','name');
+
+            fse.removeAttribute('class');
+            fse.appendChild(greeting);
+
+            console.log(fse);
+            console.log(fse.hasAttribute('fairway'));
+            console.log(fse.hasAttribute('class'));
+        </script>
+</body>
+</html>

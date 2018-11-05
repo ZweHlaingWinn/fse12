@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <h1>HEllo</h1>
+    <h2>This is h2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo esse ad enim molestiae dolore. Quis sapiente nulla tempore dicta id, veritatis totam perferendis possimus. Est molestias repellat libero doloremque.</p>
+
+        <ul >
+            <li class="fruits">Apple</li>
+            <li class="fruits">ads</li>
+            <li class="fruits">Orange</li>
+            <li class="fruits" key="value">AVVAS</li>
+            <li class="fruits" Key="value">ADS</li>
+        </ul>
+        
+        <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur quidem, esse excepturi illum blanditiis eum officiis quibusdam debitis atque minima recusandae totam quos velit animi? Corporis quas sequi sunt.
+        </h3>
+
+     
+
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+        <button id="toggle">Toggle</button>
+        <button id="hideAnimate">Hide Animate</button>
+        <button id="showAnimate">Show Animate</button>
+
+
+        <!-- <p>Hello</p> -->
+
+        <script>
+
+            let show= document.querySelector('#show'),
+                hide= document.querySelector('#hide'),
+                h3 = document.querySelector('h3')
+
+            show.addEventListener('click', function () {
+                h3.classList.remove('hide')
+                h3.classList.add('show')
+            })
+
+            hide.addEventListener('click', function () {
+                h3.classList.add('hide')
+                h3.classList.remove('show')
+            })
+           
+        </script>
+        
+
+</body>
+</html>
