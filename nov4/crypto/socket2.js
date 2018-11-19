@@ -3,7 +3,7 @@ const net = require('net')
 const sockets =[]
 
 const server = net.createServer(function (socket) {
-    socket.write('connected welcome')
+    socket.write('connected welcome <br/>')
     sockets.push(socket)
 
     socket.on('data', function (data) {
