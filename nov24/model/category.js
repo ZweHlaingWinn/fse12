@@ -18,3 +18,7 @@ const Category = module.exports = mongoose.model('Category', categorySchema)
 module.exports.getCategories = (callback,limit) => {
     Category.find(callback).limit(limit)
 }
+
+module.exports.getCategoryById= (id, callback)=> {
+    Category.findOne(id, callback)
+}

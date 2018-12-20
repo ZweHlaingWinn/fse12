@@ -1,20 +1,32 @@
 const mongoose = require('mongoose')
 
 const bookSchema = mongoose.Schema({
-    title : {
+    title: {
         type: String,
-        required : true
+        required: true
     },
-    create_at: {
+    author:{
+        type: String
+    },
+    category:{
+        type: String
+    },
+    created_at:{
         type: Date,
-        default: Date.now
+        default: Date.now()
     }
+
 })
 
-const Category = module.exports = mongoose.model('Category', categorySchema)
+
+const Book = module.exports = mongoose.model('Book', bookSchema)
 
 // module.exports.Category = mongoose.model('Category', categorySchema)
 
-module.exports.getCategories = (callback,limit) => {
-    Category.find(callback).limit(limit)
+module.exports.getBooks = (callback,limit) => {
+    Book.find(callback).limit(limit)
+}
+
+module.exports.getBookById = (id,callback) =>{
+    Book.findOne(id,callback)
 }
